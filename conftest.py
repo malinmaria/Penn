@@ -9,7 +9,7 @@ def setup(request):
     options.headless = True
     print("initiating chrome driver")
     # driver = webdriver.Chrome(executable_path="C:\\Users\\malin.nemergut\\PycharmProjects\\PennPRNews\\drivers\\chromedriver.exe")
-    driver = webdriver.Chrome(executable_path="C:\\Users\\malin.nemergut\\PycharmProjects\\PennPRNews\\drivers\\chromedriver.exe", chrome_options=options)
+    driver = webdriver.Chrome(executable_path="C:\\Users\\malin.nemergut\\PycharmProjects\\PennPRNews\\drivers\\chromedriver.exe", options=options)
     session = request.node
     for item in session.items:
         cls = item.getparent(pytest.Class)
